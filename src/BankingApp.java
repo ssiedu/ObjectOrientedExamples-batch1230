@@ -8,26 +8,20 @@ public static void main(String[] args) {
         ac2.setData(1002, "XYZ", 20000);
         ac3.setData(1003, "PQR", 30000);
 
-        ac1.showData();
-        ac2.showData();
-        ac3.showData();
+        Account.showAvgBalance(ac1, ac2);
+        Account.showAvgBalance(ac2, ac3);
+        Account.showAvgBalance(ac1, ac3);
         
-        /*
-        ac1.setAno(1001); ac1.setName( "ABC"); ac1.setBal(10000);
-        ac2.setAno(1002); ac2.setName("XYZ");  ac2.setBal(20000);
-        ac3.setAno(1003); ac3.setName("PQR"); ac3.setBal(30000);
-        System.out.println(ac1.getAno());
-        System.out.println(ac1.getName());
-        System.out.println(ac1.getBal());
-        System.out.println("____________________________");
-        System.out.println(ac2.getAno());
-        System.out.println(ac2.getName());
-        System.out.println(ac2.getBal());
-        System.out.println("____________________________");
-        System.out.println(ac3.getAno());
-        System.out.println(ac3.getName());
-        System.out.println(ac3.getBal());
-        System.out.println("____________________________");
-        */
+        ///ac1.showAvgBalance(ac3);
+        
+        //ac1.showBalance();
+        //ac2.showBalance();
+        //ac3.showBalance();
+       // ac1.showData();
+       // ac2.showData();
+       // ac3.showData();
+       
+        //Account.showTotal();
+        
     }    
 }
