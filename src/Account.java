@@ -9,9 +9,17 @@ public class Account {
     private static int totalBal;
   
     //this method will compute average balance of any two accounts
-    public static void showAvgBalance(Account tmp1, Account tmp2){
-        System.out.println("Avg Balance Of 2 Accounts : "+(tmp1.bal+tmp2.bal)/2);
+    public static void showAvgBalance(Account... tmp){
+        int n=tmp.length;   //size of array (no of account objects passed)
+        int sum=0;
+        for(int i=0; i<n; i++){
+            sum=sum+tmp[i].bal;
+        }
+        
+        System.out.println("Avg Balance of "+n+" is "+(sum/n));
     }
+    
+    /*
     //this method will compute average balance of any three accounts
     public static void showAvgBalance(Account tmp1, Account tmp2, Account tmp3){
         System.out.println("Avg Balance Of 3 Accounts : "+(tmp1.bal+tmp2.bal+tmp3.bal)/3);
@@ -20,7 +28,7 @@ public class Account {
     public static void showAvgBalance(Account tmp1, Account tmp2, Account tmp3, Account tmp4){
         System.out.println("Avg Balance Of 3 Accounts : "+(tmp1.bal+tmp2.bal+tmp3.bal+tmp4.bal)/4);
     }
-    
+    */
     
     
     
