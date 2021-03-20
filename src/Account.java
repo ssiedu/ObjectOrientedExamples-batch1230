@@ -8,6 +8,20 @@ public class Account {
     //static  (class variable)
     private static int totalBal;
   
+    public Account(){
+        
+    }
+    public Account(int a, String b){
+        ano=a; name=b;
+    }
+    public Account(int x, String y, int z){
+        this(x,y);
+        bal=z;
+        totalBal=totalBal+z;
+    }
+    
+    
+    
     //this method will compute average balance of any two accounts
     public static void showAvgBalance(Account... tmp){
         int n=tmp.length;   //size of array (no of account objects passed)

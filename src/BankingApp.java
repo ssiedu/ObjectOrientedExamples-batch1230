@@ -1,20 +1,23 @@
 public class BankingApp {
 public static void main(String[] args) {
-        Account ac1=new Account();
-        Account ac2=new Account();
-        Account ac3=new Account();
-        Account ac4=new Account();
-        Account ac5=new Account();
-        ac1.setData(1001, "ABC", 10000);
-        ac2.setData(1002, "XYZ", 20000);
-        ac3.setData(1003, "PQR", 30000);
-        ac4.setData(1004, "MNO", 40000);
-        ac5.setData(1005, "RST", 50000);
+        Account ac1=new Account(111,"AAA",10000);
+        Account ac2=new Account(112,"BBB",20000);
+        Account ac3=new Account(113,"CCC",30000);
+        Account ac4=new Account(114,"DDD",40000);
+        Account ac5=new Account(115,"EEE");
+        Account ac6=new Account();
+        ac6.setData(116, "FFF", 60000);
+        //ac1.setData(1001, "ABC", 10000);
+        //ac2.setData(1002, "XYZ", 20000);
+        //ac3.setData(1003, "PQR", 30000);
+        //ac4.setData(1004, "MNO", 40000);
+        //ac5.setData(1005, "RST", 50000);
         ac1.showData();
         ac2.showData();
         ac3.showData();
         ac4.showData();
         ac5.showData();
+        ac6.showData();
         
         /*
         ac1.setData(1001, "ABC", 10000);
